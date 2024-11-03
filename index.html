@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hillset - Paint it Black</title>
+  <style>
+    body { margin: 0; overflow: hidden; background-color: black; }
+    #play-prompt, #end-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: Arial, sans-serif;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1;
+      text-align: center;
+    }
+    #end-message { display: none; }
+  </style>
+</head>
+<body>
+  <audio id="audio" src="paint-it-black.mp3" crossorigin="anonymous"></audio>
+  <div id="play-prompt">Click to start</div>
+  <div id="end-message">
+    <p>Thanks for listening!</p>
+    <p>Song: "Paint It, Black" by The Rolling Stones</p>
+  </div>
+  <script src="/cdn/assets/js/three.min.js"></script>
+  <script src="/cdn/assets/js/simplex-noise.min.js"></script>
+  <script src="/cdn/assets/js/index.min.js"></script>
+  </body>
+</html>
